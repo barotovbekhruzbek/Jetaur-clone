@@ -136,6 +136,7 @@ export default {
       color: white;
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 40px;
 
       &:hover {
         box-shadow: 0px 12px 12px rgba(160, 34, 24, 0.25);
