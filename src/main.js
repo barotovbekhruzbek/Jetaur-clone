@@ -8,6 +8,8 @@ import {createI18n} from "vue-i18n";
 import {uz} from './lang/uz.js'
 import {ru} from './lang/ru.js'
 
+
+
 const messages = {
     uz,ru
 }

@@ -35,7 +35,11 @@
 
 <script>
 export default {
-  name: "Cars"
+  name: "Cars",
+  metaInfo: {
+    title: 'Cars'
+  }
+
 }
 </script>
 
