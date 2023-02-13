@@ -40,13 +40,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/styles/components/_vars.scss";
+@import "src/styles/components/_mixins.scss";
 .cars {
   display: flex;
+
+  @include xxl {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 .title {
   width: 50%;
   background: #EEEEEE;
   padding: 10rem;
+
+
+  @include xxl {
+    width: 100%;
+    padding: 10rem 24rem;
+  }
 
   h3 {
     font-weight: 700;
@@ -117,13 +132,25 @@ export default {
 .cars-img {
 
   background: #A02218;
+  @include xxl {
+    width: 100%;
+  }
 .sertificat {
   padding-top: 180px;
   padding-left: 500px;
+  @include xxl {
+    padding-top: 100px;
+  }
 }
   .car {
     margin-top: 25px;
     transform: translateX(-350px);
+    @include xxl {
+      transform: translateX(-50px);
+    }
+    @include lg {
+      transform: translateX(0px);
+    }
   }
 }
 
