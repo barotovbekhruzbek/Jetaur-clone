@@ -16,7 +16,7 @@
       <SplideSlide>
         <div class="carusel-2">
           <div class="carusel-title">
-            <img src="https://jetouruzbekistan.uz/assets/img/cars/x70-logo.svg" alt="">
+            <img src="@/images/cars/x70-logo.svg" alt="">
           </div>
           <div class="carusel-btn">
             <button>{{ $t('btn') }}</button>
@@ -27,7 +27,7 @@
       <SplideSlide>
         <div class="carusel-3">
           <div class="carusel-title">
-            <img src="https://jetouruzbekistan.uz/assets/img/cars/X90Plus-logo.svg" alt="">
+            <img src="@/images/cars/X90Plus-logo.svg" alt="">
           </div>
           <div class="carusel-btn">
             <button>{{ $t('btn') }}</button>

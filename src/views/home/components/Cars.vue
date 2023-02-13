@@ -62,6 +62,10 @@ export default {
     width: 100%;
     padding: 10rem 24rem;
   }
+  @include lg {
+    text-align: center;
+    padding: 0rem;
+  }
 
   h3 {
     font-weight: 700;
@@ -69,7 +73,9 @@ export default {
     line-height: 67px;
     color: #212529;
     text-transform: uppercase;
-
+  @include lg{
+    font-size: 40px;
+  }
   }
   p {
     padding-top: 8px;
@@ -78,10 +84,17 @@ export default {
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
+    @include lg {
+      font-size: 22px;
+      width: auto;
+    }
   }
   .cars-title {
     ul {
       padding-top: 10px;
+      @include lg{
+        text-align: center;
+      }
       li{
         font-weight: 400;
         font-size: 20px;
@@ -94,6 +107,10 @@ export default {
 
     width: 350px;
     padding-top: 15px;
+    @include lg {
+      width: auto;
+      text-align: center;
+    }
     ul {
       li {
 
@@ -141,6 +158,17 @@ export default {
   @include xxl {
     padding-top: 100px;
   }
+  @include lg {
+    padding-left: 0px;
+  }
+  img {
+    @include lg {
+      width:250px;
+    }
+    @include sm{
+      width: 150px;
+    }
+  }
 }
   .car {
     margin-top: 25px;
@@ -150,6 +178,11 @@ export default {
     }
     @include lg {
       transform: translateX(0px);
+    }
+    img {
+      @include lg {
+        width: 100%;
+      }
     }
   }
 }
