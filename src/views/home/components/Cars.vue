@@ -13,10 +13,10 @@
         </div>
         <div class="cars-description">
           <ul>
-            <li><img src="@/images/raindrop.svg" alt="">O'rtacha yoqilg'i sarfi, l/100 km <span>8,2</span></li>
-            <li><img src="@/images/speed.svg" alt="">Maksimal tezlik (Hm) <span>210</span></li>
-            <li><img src="@/images/speed.svg" alt="">Quvvat, ot kuchi <span>147</span></li>
-            <li><img src="@/images/seat.svg" alt="">Joylar soni <span>7</span></li>
+            <li><img src="@/images/raindrop.svg" alt="">{{$t('card_description1')}} <span>8,2</span></li>
+            <li><img src="@/images/speed.svg" alt="">{{$t('card_description2')}} <span>210</span></li>
+            <li><img src="@/images/speed.svg" alt="">{{$t('card_description3')}} <span>147</span></li>
+            <li><img src="@/images/seat.svg" alt="">{{$t('card_description4')}} <span>7</span></li>
           </ul>
           <button>{{$t('btn_2')}} <i class="fa-solid fa-arrow-right"></i></button>
         </div>
