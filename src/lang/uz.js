@@ -14,5 +14,8 @@ menu: 'Bog’lanish',
     car2:'Zamonaviy, aqlli, hashamatli va sifatli',
     cars_title11:"- 1,5T (156 ot kuchi) va 1,6T (197 ot kuchi) turbo dvigatellar",
     cars_title22:'- Avtomatik uzatish, 6DCT',
+    car3:'Aqlli, ilg\'or va xavfsiz',
+    cars_title111:'- 1,6T (197 ot kuchi) va 2,0T (250 ot kuchi) turbo dvigatellar',
+    cars_title222:'- Avtomatik uzatish, 7DCT'
 
 }

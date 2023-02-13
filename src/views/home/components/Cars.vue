@@ -148,7 +148,7 @@ export default {
 
 //cars
 .cars-img {
-
+  width: 50%;
   background: #A02218;
   @include xxl {
     width: 100%;
