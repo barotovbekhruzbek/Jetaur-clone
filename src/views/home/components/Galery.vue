@@ -135,5 +135,5 @@ export default {
 .enlarged-image img {
   max-width: 80%;
   max-height: 80%;
-}
+}}
 </style>
