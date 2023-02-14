@@ -115,7 +115,7 @@ export default {
 
   }
   @include sm {
-
+  width: 300px;
   }
 }
 
