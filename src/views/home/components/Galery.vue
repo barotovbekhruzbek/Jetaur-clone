@@ -1,9 +1,14 @@
 <template>
+  <div class="galery-title">
+    Galereya
+  </div>
+<div class="container">
   <div class="gallery">
     <div v-for="(image, index) in images" :key="index" @click="enlargeImage(image.img)">
       <img :src="image.img" alt="gallery image">
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -70,17 +75,48 @@ export default {
 </script>
 
 <style lang="scss">
+@import "src/styles/components/_vars.scss";
+@import "src/styles/components/_mixins.scss";
+.galery-title {
+  padding-top: 180px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #212529;
+  padding-bottom: 20px;
+
+}
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+ display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  @include xl {
+    grid-template-columns: auto auto auto;
+  }
+@include lg {
+  grid-template-columns: auto auto;
+}
+  @include sm {
+    grid-template-columns: auto;
+    align-items: center;
 }
 
 .gallery img {
-  max-width: 100%;
-  height: auto;
-  cursor: pointer;
+  height: 200px;
+  width: 307px;
+  @include lg {
+    width: 400px;
+    height: 250px;
+  }
+  @include md {
+    width: 307px;
+    height: 200px;
+
+  }
+  @include sm {
+
+  }
 }
 
 .enlarged-image {
