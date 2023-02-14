@@ -83,12 +83,29 @@ export default {
   .gallery {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    @include xl {
+      grid-template-columns: auto auto auto;
+    }
+    @include lg {
+      grid-template-columns: auto auto;
+    }
   }
+
   .gallery img {
     width: 307px;
     height: 200px;
+
+    @include lg {
+      width: 400px;
+      height: 250px;
+    }
+    @include md {
+      width: 307px;
+      height: 200px;
+    }
   }
   .enlarged-image {
+    transition: 0.3s;
     position: fixed;
     top: 0;
     left: 0;
