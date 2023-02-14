@@ -89,6 +89,10 @@ export default {
     @include lg {
       grid-template-columns: auto auto;
     }
+    @include sm {
+      grid-template-columns: auto;
+      margin-left: 2rem;
+    }
   }
 
   .gallery img {
@@ -102,6 +106,10 @@ export default {
     @include md {
       width: 307px;
       height: 200px;
+    }
+    @include sm {
+      width: 100%;
+      height: 300px;
     }
   }
   .enlarged-image {
