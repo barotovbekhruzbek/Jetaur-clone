@@ -16,6 +16,11 @@ menu: 'Bog’lanish',
     cars_title22:'- Avtomatik uzatish, 6DCT',
     car3:'Aqlli, ilg\'or va xavfsiz',
     cars_title111:'- 1,6T (197 ot kuchi) va 2,0T (250 ot kuchi) turbo dvigatellar',
-    cars_title222:'- Avtomatik uzatish, 7DCT'
+    cars_title222:'- Avtomatik uzatish, 7DCT',
+    test_drive: 'Test-drayvga yozilish',
+    galery:'Galereya',
+    location: 'Avtosalon  manzili',
+    location_title:'Avtosalon manzili: Sergeli tumani 2-kv, 5-metro stansiyasi',
+    btn_3:'Qayta qo‘ng‘iroqqa so‘rov'
 
 }
