@@ -36,6 +36,9 @@ export default {
       margin: 0rem 9rem;
 
     }
+    @include lg {
+      margin: 0;
+    }
     .container {
       display: flex;
       justify-content: space-between;
@@ -55,6 +58,10 @@ export default {
         @include xl {
           width: 900px;
         }
+        @include lg {
+          width: 100%;
+
+        }
       }
       .location-title {
         h3 {
@@ -67,6 +74,9 @@ export default {
           @include xxl{
             font-size: 40px;
           }
+          @include lg {
+            width: auto;
+          }
         }
         p{
           width: 454.64px;
@@ -78,12 +88,18 @@ export default {
           @include xxl{
             font-size: 16px;
           }
+          @include lg {
+            width: auto;
+          }
         }
        .location-img {
          margin-top: 40px;
          display: flex;
          gap: 15px;
 
+         @include lg{
+           display: none;
+         }
 
        }
         button {
@@ -95,6 +111,10 @@ export default {
           font-size: 16px;
           line-height: 24px;
           text-transform: uppercase;
+          @include lg {
+            margin-top: 40px;
+
+          }
         }
       }
     }
