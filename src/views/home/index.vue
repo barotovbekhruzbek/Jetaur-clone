@@ -4,6 +4,7 @@
   <X70plus/>
   <X90/>
   <Galery/>
+  <Location />
 </template>
 
 <script>
@@ -12,9 +13,10 @@ import Cars from "@/views/home/components/Cars";
 import X70plus from "@/views/home/components/X70plus";
 import X90 from "@/views/home/components/X90";
 import Galery from "@/views/home/components/Galery";
+import Location from "@/views/home/components/Location";
 export default {
   name: "index",
-  components: {Galery, X90, X70plus, Cars, Banner}
+  components: {Location, Galery, X90, X70plus, Cars, Banner}
 }
 </script>
 
