@@ -11,7 +11,7 @@
         <input type="text"
                id="name"
                placeholder="Ismingizni kiriting"
-               v-model="name"> <br>
+               v-model="name" /> <br>
         <label for="phone">{{$t('phone_number')}}</label> <br>
         <input type="number"
                name="phone"
