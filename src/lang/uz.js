@@ -21,6 +21,12 @@ menu: 'Bog’lanish',
     galery:'Galereya',
     location: 'Avtosalon  manzili',
     location_title:'Avtosalon manzili: Sergeli tumani 2-kv, 5-metro stansiyasi',
-    btn_3:'Qayta qo‘ng‘iroqqa so‘rov'
+    btn_3:'Qayta qo‘ng‘iroqqa so‘rov',
+    form_text: "Savolingizni qoldiring",
+    form_text_meneger: 'Menejerlarimiz sizga tez orada qo‘ng‘iroq qilib, savolingizga javob berishadi',
+    name: 'Ismingiz',
+    phone_number:'Telefon raqamingiz',
+    questions:'Savolingiz',
+    submit: 'Yuborish'
 
 }
