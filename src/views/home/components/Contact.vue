@@ -11,8 +11,8 @@
         <input type="text" id="name" placeholder="Ismingizni kiriting"> <br>
         <label for="phone">{{$t('phone_number')}}</label> <br>
         <input type="number" name="" id="" placeholder="+998 (__) ___-__-__"> <br>
-        <label for="questions">{{$t('questions')}}</label>
-        <input type="text" placeholder="Savolingizni yozib qoldiring">
+        <label for="questions">{{$t('questions')}}</label> <br>
+        <input type="text" placeholder="Savolingizni yozib qoldiring"> 
         <button>{{$t('submit')}}</button>
       </form>
     </div>
@@ -27,11 +27,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "src/styles/components/_vars.scss";
+@import "src/styles/components/_mixins.scss";
 .contact {
   padding-top: 80px;
 }
 .container {
   display: flex;
+
+  @include xl{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .contact-img {
     width: 625px;
@@ -39,6 +47,10 @@ export default {
     background: url("../../../images/form_img.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include sm {
+      width: 100%;
+    }
     h3 {
       padding: 40px 0px 9px 40px;
       font-weight: 500;
@@ -60,7 +72,9 @@ export default {
     background: #fff;
     width: 625px;
     height: 490px;
-
+@include sm {
+  width: 100%;
+}
 
     form{
       label {
@@ -77,6 +91,9 @@ export default {
         border: 1px solid #CED4DA;
         border-radius: 4px;
         margin-bottom: 17px;
+        @include sm {
+          width: 80%;
+        }
 
         &::placeholder {
           font-weight: 400;

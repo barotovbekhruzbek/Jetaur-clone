@@ -47,6 +47,7 @@ export default {
 
         flex-direction: column;
         justify-content: center;
+        align-items: center;
       }
       .location iframe {
         width:756px;
