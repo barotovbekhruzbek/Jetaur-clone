@@ -6,13 +6,25 @@
       <p>{{$t('form_text_meneger')}}</p>
     </div>
     <div class="form-contact">
-      <form action="">
+      <form ref="form" @submit.prevent="sendEmail">
         <label for="name">{{$t('name')}}</label> <br>
-        <input type="text" id="name" placeholder="Ismingizni kiriting"> <br>
+        <input type="text"
+               id="name"
+               placeholder="Ismingizni kiriting"
+               v-model="name"> <br>
         <label for="phone">{{$t('phone_number')}}</label> <br>
-        <input type="number" name="" id="" placeholder="+998 (__) ___-__-__"> <br>
-        <label for="questions">{{$t('questions')}}</label> <br>
-        <input type="text" placeholder="Savolingizni yozib qoldiring"> 
+        <input type="number"
+               name="phone"
+               id="phone"
+               placeholder="+998 (__) ___-__-__"
+               v-model="phone"
+        /> <br>
+        <label for="text">{{$t('questions')}}</label> <br>
+        <input type="ques"
+               id="text"
+               placeholder="Savolingizni yozib qoldiring"
+              v-model="ques"
+        />
         <button>{{$t('submit')}}</button>
       </form>
     </div>
@@ -21,8 +33,35 @@
 </template>
 
 <script>
+import emailjs from "@emailjs/browser";
 export default {
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      name: '',
+      phone: '',
+      ques: ''
+    }
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_wzm20kf', 'template_dfozejq', e.target,
+            'zF09BtqDGi5v9QvdU', {
+              name: this.name,
+              phone: this.phone,
+              ques: this.ques
+            })
+
+      } catch(error) {
+        console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.phone = ''
+      this.ques = ''
+    },
+  }
 }
 </script>
 

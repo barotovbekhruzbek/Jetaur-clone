@@ -5,6 +5,7 @@ import './styles/main.scss'
 import VueSplide from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 import {createI18n} from "vue-i18n";
+import emailjs from "@emailjs/browser"
 import {uz} from './lang/uz.js'
 import {ru} from './lang/ru.js'
 
@@ -21,4 +22,4 @@ const i18n = createI18n({
 })
 
 
-createApp(App).use(router).use(i18n).use(VueSplide).mount('#app')
+createApp(App).use(router).use(i18n).use(VueSplide).use(emailjs).mount('#app')
