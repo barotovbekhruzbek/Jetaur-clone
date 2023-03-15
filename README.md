@@ -1,4 +1,5 @@
-# jetaur
+# jetaur clone
+Loyiha shunchaki Jetaur rasmiy saytidagi kamchiliklar tuzatilgan
 
 ## Project setup
 ```
