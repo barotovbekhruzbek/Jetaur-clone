@@ -20,10 +20,10 @@
                v-model="phone"
         /> <br>
         <label for="text">{{$t('questions')}}</label> <br>
-        <input type="ques"
+        <input type="message"
                id="text"
                placeholder="Savolingizni yozib qoldiring"
-              v-model="ques"
+              v-model="message"
         />
         <button>{{$t('submit')}}</button>
       </form>
@@ -40,7 +40,7 @@ export default {
     return {
       name: '',
       phone: '',
-      ques: ''
+      message: ''
     }
   },
   methods: {
@@ -50,7 +50,7 @@ export default {
             'zF09BtqDGi5v9QvdU', {
               name: this.name,
               phone: this.phone,
-              ques: this.ques
+              message: this.message
             })
 
       } catch(error) {
@@ -59,7 +59,7 @@ export default {
       // Reset form field
       this.name = ''
       this.phone = ''
-      this.ques = ''
+      this.message = ''
     },
   }
 }
